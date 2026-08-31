@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0a1930" />
-<title>INOW — Global Trading, Brokerage, Consultancy & Investments</title>
-<meta name="description" content="INOW is a Dubai-based international trading, brokerage, industry consultancy and venture capital firm. Connecting trade. Advising industry. Investing in innovation." />
+<title>ILS — Global Trading, Brokerage, Consultancy & Investments</title>
+<meta name="description" content="ILS is a Dubai-based international trading, brokerage, industry consultancy and venture capital firm. Connecting trade. Advising industry. Investing in innovation." />
 <link rel="icon" type="image/png" href="Icon_White.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,9 @@
     --text: #e9eef7;
     --text-dim: #a9b6cc;
     --text-mute: #7d8ba4;
-    --gold: #d9b26a;
-    --gold-2:#f2d18a;
-    --accent: #4aa8ff;
+    --gold: #255aad;
+    --gold-2:#4a80d4;
+    --accent: #4a80d4;
     --bg-soft: #0c1c38;
     --card: rgba(255,255,255,.04);
     --card-hover: rgba(255,255,255,.07);
@@ -40,7 +40,7 @@
     color:var(--text);
     background:
       radial-gradient(1200px 700px at 85% -10%, rgba(74,168,255,.10), transparent 60%),
-      radial-gradient(900px 600px at -10% 30%, rgba(217,178,106,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 30%, rgba(37,90,173,.08), transparent 60%),
       linear-gradient(180deg,#04091a 0%, var(--navy-900) 40%, #06122a 100%);
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
@@ -66,9 +66,8 @@
   .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;transition:padding .3s var(--ease)}
   .nav.scrolled .nav-inner{padding:12px 0}
   .brand{display:flex;align-items:center;gap:12px}
-  .brand img{height:34px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
-  .brand-text{font-weight:700;letter-spacing:.18em;font-size:14px;color:#fff}
-  .brand-text span{color:var(--gold)}
+  .brand img{height:42px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4));transition:height .3s var(--ease)}
+  .nav.scrolled .brand img{height:36px}
   .nav-links{display:flex;gap:34px;align-items:center}
   .nav-links a{
     font-size:14px;color:var(--text-dim);font-weight:500;letter-spacing:.02em;
@@ -88,9 +87,9 @@
   }
   .btn-primary{
     background:linear-gradient(135deg,var(--gold) 0%, var(--gold-2) 100%);
-    color:#1a1305;box-shadow:0 8px 24px rgba(217,178,106,.28), inset 0 1px 0 rgba(255,255,255,.4);
+    color:#ffffff;box-shadow:0 8px 24px rgba(37,90,173,.35), inset 0 1px 0 rgba(255,255,255,.25);
   }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(217,178,106,.4)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,90,173,.5)}
   .btn-ghost{
     background:transparent;color:#fff;border:1px solid var(--line-strong);
   }
@@ -130,12 +129,12 @@
   .eyebrow{
     display:inline-flex;align-items:center;gap:10px;
     padding:8px 16px;border-radius:999px;
-    background:rgba(217,178,106,.10);border:1px solid rgba(217,178,106,.28);
+    background:rgba(37,90,173,.10);border:1px solid rgba(37,90,173,.28);
     color:var(--gold-2);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
     margin-bottom:26px;
   }
-  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(217,178,106,.2);animation:pulse 2.4s infinite}
-  @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(217,178,106,.2)}50%{box-shadow:0 0 0 10px rgba(217,178,106,0)}}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(37,90,173,.2);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(37,90,173,.2)}50%{box-shadow:0 0 0 10px rgba(37,90,173,0)}}
   h1.hero-title{
     font-family:'Playfair Display',serif;
     font-size:clamp(38px, 6.4vw, 82px);
@@ -143,7 +142,7 @@
     letter-spacing:-.01em;max-width:14ch;
   }
   .hero-title .accent{
-    background:linear-gradient(120deg, var(--gold) 0%, var(--gold-2) 40%, #fff 90%);
+    background:linear-gradient(120deg, #4a80d4 0%, #7fa8e6 40%, #ffffff 90%);
     -webkit-background-clip:text;background-clip:text;color:transparent;
     display:inline-block;
   }
@@ -207,15 +206,15 @@
   }
   .service::before{
     content:"";position:absolute;inset:0;border-radius:var(--radius);
-    background:linear-gradient(135deg, rgba(217,178,106,.15), transparent 40%);
+    background:linear-gradient(135deg, rgba(37,90,173,.15), transparent 40%);
     opacity:0;transition:opacity .4s var(--ease);pointer-events:none;
   }
-  .service:hover{transform:translateY(-6px);background:var(--card-hover);border-color:rgba(217,178,106,.35)}
+  .service:hover{transform:translateY(-6px);background:var(--card-hover);border-color:rgba(37,90,173,.35)}
   .service:hover::before{opacity:1}
   .svc-icon{
     width:56px;height:56px;border-radius:14px;display:grid;place-items:center;
-    background:linear-gradient(135deg, rgba(217,178,106,.18), rgba(74,168,255,.12));
-    border:1px solid rgba(217,178,106,.25);color:var(--gold-2);margin-bottom:22px;
+    background:linear-gradient(135deg, rgba(37,90,173,.18), rgba(74,168,255,.12));
+    border:1px solid rgba(37,90,173,.25);color:var(--gold-2);margin-bottom:22px;
   }
   .svc-icon svg{width:26px;height:26px}
   .svc-num{position:absolute;top:22px;right:24px;font-family:'Playfair Display',serif;color:rgba(255,255,255,.06);font-size:52px;font-weight:700;line-height:1}
@@ -267,7 +266,7 @@
   .badge .v{color:var(--text-mute);font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:6px}
   .why-float{
     position:absolute;top:24px;right:24px;
-    background:rgba(217,178,106,.94);color:#1a1305;
+    background:rgba(37,90,173,.94);color:#1a1305;
     padding:10px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
     box-shadow:0 10px 24px rgba(0,0,0,.35);
   }
@@ -294,7 +293,7 @@
 
   /* ================= CONTACT ================= */
   #contact{background:
-    radial-gradient(700px 500px at 10% 0%, rgba(217,178,106,.08), transparent 55%),
+    radial-gradient(700px 500px at 10% 0%, rgba(37,90,173,.08), transparent 55%),
     linear-gradient(180deg, transparent, rgba(6,15,34,.7) 50%, #04091a);
   }
   .contact-grid{
@@ -308,10 +307,10 @@
     border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);
     transition:all .3s var(--ease);
   }
-  .ccard:hover{border-color:rgba(217,178,106,.4);background:rgba(255,255,255,.05);transform:translateX(4px)}
+  .ccard:hover{border-color:rgba(37,90,173,.4);background:rgba(255,255,255,.05);transform:translateX(4px)}
   .ccard-icon{
     width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex-shrink:0;
-    background:linear-gradient(135deg, rgba(217,178,106,.2), rgba(74,168,255,.14));
+    background:linear-gradient(135deg, rgba(37,90,173,.2), rgba(74,168,255,.14));
     color:var(--gold-2);
   }
   .ccard-icon svg{width:20px;height:20px}
@@ -326,7 +325,7 @@
   }
   .form-card::before{
     content:"";position:absolute;inset:-1px;border-radius:22px;padding:1px;
-    background:linear-gradient(140deg, rgba(217,178,106,.5), transparent 40%, rgba(74,168,255,.3));
+    background:linear-gradient(140deg, rgba(37,90,173,.5), transparent 40%, rgba(74,168,255,.3));
     -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;
   }
@@ -348,7 +347,7 @@
   .field input::placeholder, .field textarea::placeholder{color:var(--text-mute)}
   .field input:focus, .field select:focus, .field textarea:focus{
     border-color:var(--gold);background:rgba(0,0,0,.4);
-    box-shadow:0 0 0 4px rgba(217,178,106,.12);
+    box-shadow:0 0 0 4px rgba(37,90,173,.12);
   }
   .form-row-full{margin-bottom:14px}
   .consent{display:flex;gap:10px;align-items:flex-start;margin:6px 0 22px;color:var(--text-mute);font-size:12.5px;line-height:1.5}
@@ -428,13 +427,12 @@
 <!-- ================= NAV ================= -->
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="brand" aria-label="INOW home">
-      <img src="ILS Logo White.png" alt="INOW" onerror="this.style.display='none'"/>
-      <span class="brand-text">IN<span>O</span>W</span>
+    <a href="#top" class="brand" aria-label="ILS home">
+      <img src="ILS Logo White.png" alt="ILS"/>
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#services">Services</a>
-      <a href="#why">Why INOW</a>
+      <a href="#why">Why ILS</a>
       <a href="#industries">Industries</a>
       <a href="#contact">Contact</a>
       <a href="#contact" class="btn btn-primary">
@@ -463,7 +461,7 @@
       <span class="accent">Investing in Innovation.</span>
     </h1>
     <p class="hero-sub reveal in delay-2">
-      INOW is a Dubai-based international trading, brokerage, and industry consultancy firm — and an active venture capital & angel investor. We move goods, close deals, and back the founders shaping tomorrow's markets.
+      ILS is a Dubai-based international trading, brokerage, and industry consultancy firm — and an active venture capital & angel investor. We move goods, close deals, and back the founders shaping tomorrow's markets.
     </p>
     <div class="hero-cta reveal in delay-3">
       <a href="#contact" class="btn btn-primary">
@@ -491,7 +489,7 @@
     <div class="sec-head">
       <div class="sec-eyebrow reveal">What we do</div>
       <h2 class="sec-title reveal delay-1">Four disciplines. One global network.</h2>
-      <p class="sec-sub reveal delay-2">From physical trade flows to boardroom advisory and early-stage capital — INOW is built to move value across borders, industries, and stages.</p>
+      <p class="sec-sub reveal delay-2">From physical trade flows to boardroom advisory and early-stage capital — ILS is built to move value across borders, industries, and stages.</p>
     </div>
 
     <div class="service-grid">
@@ -558,10 +556,11 @@
 <section id="why">
   <div class="wrap why-grid">
     <div class="why-copy">
-      <div class="sec-eyebrow reveal" style="text-align:left">Why INOW</div>
+      <div class="sec-eyebrow reveal" style="text-align:left">Why ILS</div>
       <h2 class="reveal delay-1">The advantage of a global operator based in Dubai.</h2>
+
       <p class="reveal delay-2">Positioned at the crossroads of Europe, Asia and Africa, we bring together physical trade know-how, industrial expertise, and investor discipline — under one trusted brand.</p>
-      <p class="reveal delay-3">Whether you need to source a container, close a cross-border deal, enter a new market, or fund the next chapter of your company — INOW is built to make it happen.</p>
+      <p class="reveal delay-3">Whether you need to source a container, close a cross-border deal, enter a new market, or fund the next chapter of your company — ILS is built to make it happen.</p>
       <div class="pill-row reveal delay-4">
         <span class="pill"><span class="em">🌍</span> Global trading network</span>
         <span class="pill"><span class="em">🏭</span> Deep industry expertise</span>
@@ -617,20 +616,20 @@
     <div class="contact-copy">
       <div class="sec-eyebrow reveal" style="text-align:left">Let's work together</div>
       <h2 class="reveal delay-1">Trade. Advise. Invest. Together.</h2>
-      <p class="lead reveal delay-2">Whether you're looking for trading opportunities, brokerage support, strategic consulting, or investment partnerships — INOW is ready to connect.</p>
+      <p class="lead reveal delay-2">Whether you're looking for trading opportunities, brokerage support, strategic consulting, or investment partnerships — ILS is ready to connect.</p>
 
       <div class="contact-cards">
-        <a href="mailto:info@inow.ae" class="ccard reveal delay-2">
+        <a href="mailto:info@ilsmtc.com" class="ccard reveal delay-2">
           <span class="ccard-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
           </span>
-          <div><div class="lab">Email</div><div class="val">info@inow.ae</div></div>
+          <div><div class="lab">Email</div><div class="val">info@ilsmtc.com</div></div>
         </a>
-        <a href="tel:+971000000000" class="ccard reveal delay-3">
+        <a href="tel:+97144343800" class="ccard reveal delay-3">
           <span class="ccard-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L8 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z"/></svg>
           </span>
-          <div><div class="lab">Phone</div><div class="val">+971 XXX XXX XXX</div></div>
+          <div><div class="lab">Phone</div><div class="val">+971 4 434 3800</div></div>
         </a>
         <div class="ccard reveal delay-4">
           <span class="ccard-icon">
@@ -644,7 +643,7 @@
     <form class="form-card reveal delay-2" id="leadForm" novalidate>
       <div class="form-head">
         <h3>Send us an enquiry</h3>
-        <p>Tell us about your project — we typically respond within one business day.</p>
+        <p>Tell us about your project — our team typically responds within one business day.</p>
       </div>
 
       <div class="form-row">
@@ -694,7 +693,7 @@
 
       <label class="consent">
         <input type="checkbox" required />
-        <span>I agree that INOW may contact me regarding my enquiry. My information will be handled in accordance with INOW's privacy practices.</span>
+        <span>I agree that ILS may contact me regarding my enquiry. My information will be handled in accordance with ILS's privacy practices.</span>
       </label>
 
       <button type="submit" class="btn btn-primary form-submit">
@@ -714,14 +713,14 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="ILS Logo White.png" alt="INOW" onerror="this.style.display='none'"/>
+        <img src="ILS Logo White.png" alt="ILS"/>
         <p class="tagline">Connecting Trade. Advising Industry. Investing in Innovation.</p>
       </div>
       <div class="foot">
         <h4>Company</h4>
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#why">Why INOW</a></li>
+          <li><a href="#why">Why ILS</a></li>
           <li><a href="#industries">Industries</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -729,14 +728,14 @@
       <div class="foot">
         <h4>Get in touch</h4>
         <ul>
-          <li><a href="mailto:info@inow.ae">info@inow.ae</a></li>
-          <li><a href="tel:+971000000000">+971 XXX XXX XXX</a></li>
+          <li><a href="mailto:info@ilsmtc.com">info@ilsmtc.com</a></li>
+          <li><a href="tel:+97144343800">+971 4 434 3800</a></li>
           <li>Dubai, United Arab Emirates</li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <div>© <span id="yr"></span> INOW — Dubai, UAE. All rights reserved.</div>
+      <div>© <span id="yr"></span> ILS — Dubai, UAE. All rights reserved.</div>
       <div>Built with care in the global business hub.</div>
     </div>
   </div>
